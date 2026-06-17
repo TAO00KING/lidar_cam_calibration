@@ -19,7 +19,7 @@
 ---
 
 # 1 原理
-![2](D:\work\catkin_ws\lidar2cam_calibration-master\lidar2cam_calibration-master\data\marker_img\2.png)
+![2](https://raw.githubusercontent.com/TAO00KING/lidar_cam_calibration/main/data/marker_img/2.png)
 
 $$
 P_c = TclP_lidar
@@ -79,8 +79,7 @@ Marker size, mm: 100,边长可以不管,打印出来可能会变，直接改cfg/
 使用代码生成的`aruco`二维码可以放到`office-word`中,修改图像的尺寸,打印出来是`1：1`尺寸
 
 生成`4`张`aruco`二维码,`id`分别为`1，2，3，4`，显示`id=1`的二维码：
-
-![maker1](D:\work\catkin_ws\lidar2cam_calibration-master\lidar2cam_calibration-master\data\marker_img\maker1.png)
+![2](https://raw.githubusercontent.com/TAO00KING/lidar_cam_calibration/main/data/marker_img/maker1.png)
 
 
 4. 制作标定板
@@ -88,8 +87,8 @@ Marker size, mm: 100,边长可以不管,打印出来可能会变，直接改cfg/
 找个矩形的木板,依次贴上4张二维码,并记录二维码在木板上位置信息
 
 位置信息在确定相机坐标系下坐标时需要用到,需要写入`params.yaml`中
+![2](https://raw.githubusercontent.com/TAO00KING/lidar_cam_calibration/main/data/marker_img/april_tags.png)
 
-![april_tags](D:\work\catkin_ws\lidar2cam_calibration-master\lidar2cam_calibration-master\data\marker_img\april_tags.png)
 
 ---
 
@@ -128,8 +127,8 @@ roslaunch lidar2cam_calibration data_frame_extraction_node.launch
 
 尽可能多的采集数据,调整标定板位置,继续采集,建议采集`10`组以上不同的位姿的数据。
 
+![2](https://raw.githubusercontent.com/TAO00KING/lidar_cam_calibration/main/data/marker_img/1.png)
 
-![1](D:\work\catkin_ws\lidar2cam_calibration-master\lidar2cam_calibration-master\data\marker_img\1.png)
 
 
 4. 求解`Tcl`
